@@ -24,7 +24,9 @@ public class Main {
 //        }
         Day4 day4 = new Day4();
 
-        day4.getSleepChedules();
+        Day5 day5 = new Day5();
+
+        day5.second();
 
     }
 }
