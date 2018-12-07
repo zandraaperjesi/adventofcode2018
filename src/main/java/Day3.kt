@@ -5,10 +5,6 @@ import kotlin.collections.HashSet
 
 class Day3 {
 
-    fun hello() {
-        println("hello")
-    }
-
     fun getPlans() {
         val points = HashSet<Point>()
         val overLapped = HashSet<Point>()

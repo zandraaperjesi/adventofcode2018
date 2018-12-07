@@ -27,7 +27,9 @@ public class Main {
         Day5 day5 = new Day5();
 
         Day6 day6 = new Day6();
-        day6.getSafeArea();
+
+        Day7 day7 = new Day7();
+        day7.second();
 
     }
 }

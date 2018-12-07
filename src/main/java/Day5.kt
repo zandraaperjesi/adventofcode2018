@@ -37,7 +37,7 @@ class Day5 {
 
     fun second() {
         getShortest()
-        Collections.sort(removedShortened)
+        removedShortened.sort()
         println(removedShortened[0])
     }
 
