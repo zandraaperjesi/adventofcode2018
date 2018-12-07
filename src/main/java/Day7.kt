@@ -43,6 +43,7 @@ class Day7 {
     fun second() {
         val order = ArrayList<Char>()
         getInput()
+        var timeToComplete = 0
         val availableSteps = HashSet<Char>(availableChars.filter { x -> x !in allPrereqs })
         var currentSteps = ArrayList<Pair<Char, Int>>()
         while (availableSteps.isNotEmpty() || currentSteps.isNotEmpty()) {
@@ -61,10 +62,11 @@ class Day7 {
             }
             currentSteps.remove(currentStep)
             order.add(currentStep.first)
+            timeToComplete += currentStep.second
             currentSteps = ArrayList(currentSteps.map { x -> Pair(x.first, x.second - currentStep.second) })
             availableSteps.addAll(stepsToAdd.filter { x -> !order.contains(x) }.filter { x -> !availableAll.contains(x) })
         }
         println(order.joinToString(""))
-
+        println(timeToComplete)
     }
 }
