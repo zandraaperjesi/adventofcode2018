@@ -43,8 +43,6 @@ class Day8 {
             currentArr = returnSumInput(currentArr, mySum)
         }
         for(i in 0 until myMeta) {
-            println(currentArr[i] - 1)
-            println(mySum)
             sumBuff += mySum.getOrElse(currentArr[i] - 1, {0})
         }
         parentSum.add(sumBuff)
