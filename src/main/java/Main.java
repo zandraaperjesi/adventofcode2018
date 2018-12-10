@@ -31,7 +31,9 @@ public class Main {
         Day7 day7 = new Day7();
 
         Day8 day8 = new Day8();
-        day8.getInput();
+
+        Day9 day9 = new Day9();
+        day9.second();
 
     }
 }
