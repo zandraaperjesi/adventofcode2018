@@ -33,7 +33,9 @@ public class Main {
         Day8 day8 = new Day8();
 
         Day9 day9 = new Day9();
-        day9.second();
+
+        Day10 day10 = new Day10();
+        day10.first();
 
     }
 }
